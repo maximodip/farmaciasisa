@@ -12,8 +12,8 @@ import { AccountModule } from './account/account.module';
       type: 'mysql',
       host: 'localhost',
       port: 3306,
-      username: 'dbeaver_user',
-      password: 'StrongPass123!',  // Asegúrate de usar tu contraseña aquí
+      username: process.env.DB_USERNAME,
+      password: process.env.DB_PASSWORD, // Asegúrate de usar tu contraseña aquí
       database: 'farmaciasisa',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,

@@ -2,9 +2,9 @@
   "name": "farmaciasisa",
   "version": "1.0.0",
   "scripts": {
-    "client": "cd client && pnpm start",
+    "client": "cd client && pnpm run dev",
     "server": "cd server && pnpm start",
-    "dev": "concurrently \"pnpm run start\" \"pnpm run dev\"",
+    "dev": "concurrently \"pnpm run client\" \"pnpm run server\"",
     "install-all": "pnpm install && cd client && pnpm install && cd ../server && pnpm install"
   },
   "dependencies": {
